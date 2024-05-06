@@ -206,6 +206,16 @@ main{
 .carrusel > div:hover{
     flex: 5;
 }
+.formacion-boton{
+    display: flex;
+    justify-content: center;
+    margin: 16px auto;
+}
+.formacion-boton a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* Sección de Experiencia Profesional/Proyectos*/
@@ -269,18 +279,79 @@ main{
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
+    text-align: center;
     padding: 8px;
     width: 100%;
+}
+.contacto .contacto-subtext{
+    font-size: 24px;
+    line-height: 1;
+    padding: 8px 0 0;
 }
 .contacto-form{
     width: 90%;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    margin: 32px auto;
+}
+.contacto-form input, textarea, button{
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background-color: white;
+}
+.contacto-form textarea{
+    resize: none;
+}
+.contacto button{
+    background-color: var(--space-cadet);
+    color: var(--rosa);
+}
+.contacto button:hover{
+    font-weight: bold;
+    transition: .3s;
+    cursor: pointer;
+    
 }
 /*footer*/
 
-
-
+footer{
+    border-radius: 12px 12px 0;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .footer-redes {
+    margin: 25px;
+}
+footer .footer-redes {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer .footer-redes a{
+    color: var(--ghost-white);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--ghost-white);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px;
+    font-size: 26px;
+    transition: .3s;
+}
+footer .footer-redes a:hover{
+    background-color: var(--space-cadet); 
+    border: none; 
+    color: var(--rosa);
+}
 
 /* MEDIA QUERIES*/
 @media  (max-width: 900px){
