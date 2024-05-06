@@ -1,0 +1,84 @@
+
+:root{
+   --white: rgb(231, 230, 241);
+   --ghost-white: #f4f5fa;
+   --periwinkle: #b3badd;
+   --tiffany-blue: #b8e0d2;
+   --cambridge-blue: #9cbfa7;
+   --glaucous: #7377be;
+   --space-cadet: #2b2942;
+   --rosa: #EAC4D5;
+}
+
+/* colores */
+.c-0{ color: var(--white);}
+.c-1{ color: var(--ghost-white);}
+.c-2{ color: var(--periwinkle);}
+.c-3{ color: var(--tiffany-blue);}
+.c-4{ color: var(--cambridge-blue);}
+.c-5{ color: var(--glaucous);}
+.c-6{ color: var(--space-cadet);}
+.c-7{ color: var(--rosa);}
+
+/* background color */
+.bg-0{ background-color: var(--white);}
+.bg-1{ background-color: var(--ghost-white);}
+.bg-2{ background-color: var(--periwinkle);}
+.bg-3{ background-color: var(--tiffany-blue);}
+.bg-4{ background-color: var(--cambridge-blue);}
+.bg-5{ background-color: var(--glaucous);}
+.bg-6{ background-color: var(--space-cadet);}
+.bg-7{ background-color: var(--rosa);}
+
+/*  estilo general */
+
+/* boton primario */
+.btt-1{
+   background-color: var(--periwinkle);
+   color: var(--space-cadet);
+   width: 170px;
+   height: 48px;
+   border-radius: 0 12px;
+   text-align: center;
+}
+.btt-1:hover{
+   background-color: var(--glaucous);
+   transition: .4s;
+   font-weight: bold;
+   cursor: pointer;
+   color: var(--ghost-white);
+}
+
+/* boton secundario */
+.btt-2{
+   background-color: var(--tiffany-blue);
+   color: var(--space-cadet);
+   width: 170px;
+   height: 48px;
+   border-radius: 0 12px;
+   text-align: center;
+}
+.btt-2:hover{
+   background-color: var(--cambridge-blue);
+   color: var(--ghost-white);
+   transition: .4s;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+/* boton secundario */
+.btt-3{
+   background-color: var(--tiffany-blue);
+   color: var(--space-cadet);
+   width: 170px;
+   height: 48px;
+   border-radius: 0 12px;
+   text-align: center;
+}
+.btt-3:hover{
+   background-color: var(--rosa);
+   color: var(--ghost-white);
+   transition: .4s;
+   font-weight: bold;
+   cursor: pointer;
+}
