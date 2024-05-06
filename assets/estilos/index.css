@@ -1,0 +1,342 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url(colores.css);
+
+*{
+    margin: 0 ;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+body{
+    background-color: var(--ghost-white) ;
+    max-width: 1136px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+h1 span{
+    font-family: 'Patrick Hand SC';
+}
+h3{
+    font-size: 40px;
+    color: var(--martinique-50);
+    text-align: center;
+    margin: 32px auto;
+}
+/* Header */
+.header{
+    padding: 16px ;
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+.header .header-logo{
+    width: 150px;
+}
+.header .nav{
+    display: flex;
+    padding: 0 16px;
+    gap: 32px;
+}
+.header .nav .nav-link:hover{
+    color: var( --glaucous);
+    font-weight: bold;
+    transition: .2s;
+}
+header .menu-container{
+    display: none;
+}
+/* main */
+main{
+   border-radius: 12px;
+   padding: 16px; 
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+/*Sección Hero*/
+.hero{
+    padding: 16px 0;
+}
+.hero .hero-contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.hero .hero-imagen{
+    border-radius: 12px;
+    width: 250px;
+    object-fit: cover;
+    border: 3px solid var(--cambridge-blue);
+}
+.hero .hero-descripcion .hero-titulo{
+    font-size: 32px;
+    padding: 16px 0;
+}
+.hero .hero-descripcion .hero-texto{
+    font-weight: 300;
+    font-size: 24px;
+    font-style: normal;
+}
+.hero .hero-redes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 32px 0;
+}
+.hero .hero-redes .hero-red-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Sección sobre mi*/
+
+.about .about-texto{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+/*Sección de Skills*/
+.skills{
+    padding: 32px;
+}
+.skills .skills-linea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.skills .skills-box{
+    background-color: var(--tiffany-blue);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.skills .skills-box:hover{
+    background-color: var(--rosa);
+    font-weight: bold;
+    .iconos{
+        width: 52px;
+        height: 52px;
+    }
+    transition: .3s;
+}
+.skills .iconos{
+    width: 50px;
+    height: 50px;
+}
+.skills .skills-nombre{
+    font-family: 'Patrick Hand SC';
+    font-size:20px;
+}
+
+
+/*Sección de Hobbies*/
+.hobbies{
+    padding: 32px;
+}
+.hobbies .hobbies-linea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.hobbies .hobbies-box{
+    background-color: var(--periwinkle);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.hobbies .hobbies-box:hover{
+    background-color: var(--rosa);
+    font-weight: bold;
+    .iconos{
+        width: 52px;
+        height: 52px;
+    }
+    transition: .3s;
+}
+.hobbies .iconos{
+    width: 50px;
+    height: 50px;
+}
+.hobbies .hobbies-nombre{
+    font-family: 'Patrick Hand SC';
+    font-size:20px;
+}
+
+
+/* Sección Formación Académica*/
+.carrusel{
+    display: flex;
+    height: 25rem;
+    gap: .5rem;
+}
+.carrusel > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.carrusel > div:hover{
+    flex: 5;
+}
+
+
+/* Sección de Experiencia Profesional/Proyectos*/
+.experiencia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.experiencia-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 32px auto; 
+    padding: 8px;
+    border: 1px solid var(--martinique-950);
+    border-radius: 12px;
+}
+.experiencia-img{
+    max-width: 100%;
+    min-width: 50%;
+    border-radius: 12px;
+    border: 2px solid var(--martinique-50);
+}
+.experiencia-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 16px;
+}
+.experiencia-nombre{
+    font-size: 26px;
+}
+.experiencia-descripcion{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center
+}
+.experiencia-tecnologias{
+    font-weight: bold;
+}
+.experiencia-button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 24px auto;
+}
+.experiencia-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Sección de Contacto*/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    padding: 8px;
+    width: 100%;
+}
+.contacto-form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+/*footer*/
+
+
+
+
+/* MEDIA QUERIES*/
+@media  (max-width: 900px){
+    .carrusel > div{
+        flex: 1;
+    }
+    .carrusel > div:hover{
+        flex: 7;
+    }
+    
+}
+/*Tablet*/
+@media (max-width: 768px) {
+    /* Header */
+
+    /*Sección Hero*/
+
+    /*Sección sobre mi/
+
+    /*Sección de Skills*/
+
+    /*Sección de Hobbies*/
+
+    /* Sección Formación Académica*/
+    .carrusel{
+        height: 20rem;
+        gap: 0.1rem;
+    }
+
+    /* Sección de Experiencia Profesional/Proyectos*/
+
+    /*Sección de Contacto*/
+
+    /*footer*/
+
+}
+
+
+/*Mobile*/
+@media (min-width: 425px) {
+    /* Header */
+
+    /*Sección Hero*/
+
+    /*Sección sobre mi/
+
+    /*Sección de Skills*/
+
+    /*Sección de Hobbies*/
+
+    /* Sección Formación Académica*/
+
+    /* Sección de Experiencia Profesional/Proyectos*/
+
+    /*Sección de Contacto*/
+
+    /*footer*/
+
+}
