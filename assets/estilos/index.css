@@ -68,7 +68,7 @@ main{
     flex-direction: row-reverse;
 }
 .hero .hero-imagen{
-    border-radius: 12px;
+    border-radius: 200px 200px 12px 194px;
     width: 250px;
     object-fit: cover;
     border: 3px solid var(--cambridge-blue);
@@ -124,7 +124,7 @@ main{
     justify-content: center;
     gap: 16px;
     padding: 24px;
-    border-radius: 12px;
+    border-radius: 200px 200px 12px 200px;
     cursor: pointer;
 }
 .skills .skills-box:hover{
@@ -167,7 +167,7 @@ main{
     flex-wrap: wrap;
     gap: 16px;
     padding: 24px;
-    border-radius: 12px;
+    border-radius: 200px 200px 200px 12px;
     cursor: pointer;
 }
 .hobbies .hobbies-box:hover{
@@ -302,18 +302,19 @@ main{
     outline: none;
     background-color: white;
 }
+
 .contacto-form textarea{
     resize: none;
 }
 .contacto button{
-    background-color: var(--space-cadet);
-    color: var(--rosa);
+    background-color: gainsboro;
+    color: var(--space-cadet);
 }
-.contacto button:hover{
+.contacto button:focus{
     font-weight: bold;
     transition: .3s;
     cursor: pointer;
-    
+    border: 2px solid var(--space-cadet);
 }
 /*footer*/
 
@@ -361,12 +362,37 @@ footer .footer-redes a:hover{
     .carrusel > div:hover{
         flex: 7;
     }
+    .hero-contenedor{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
 }
 /*Tablet*/
 @media (max-width: 768px) {
     /* Header */
-
+    #nav{
+        display: none;
+    }
+    #menuContainer{
+        display: block;
+    }
+    #dropdown-menu{
+        background-color: white;
+        position: absolute;
+        top: 14%;
+        right: 1px;
+        min-width: 170px;
+        z-index: 1;
+        border-radius: 12px;
+    }
+    #dropdown-menu li{
+        padding: 8px;
+    }
+    #dropdown-menu li:hover{
+        background-color: var(--periwinkle);
+        transition: .3s;
+    }
     /*Sección Hero*/
 
     /*Sección sobre mi/
@@ -382,7 +408,10 @@ footer .footer-redes a:hover{
     }
 
     /* Sección de Experiencia Profesional/Proyectos*/
-
+    .experiencia-contenedor{
+        width: 100%;
+        margin: 16px 0;
+    }
     /*Sección de Contacto*/
 
     /*footer*/
@@ -391,7 +420,7 @@ footer .footer-redes a:hover{
 
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 425px) {
     /* Header */
 
     /*Sección Hero*/
@@ -405,7 +434,10 @@ footer .footer-redes a:hover{
     /* Sección Formación Académica*/
 
     /* Sección de Experiencia Profesional/Proyectos*/
-
+    .experiencia {
+        margin: 0;
+    }
+    
     /*Sección de Contacto*/
 
     /*footer*/
