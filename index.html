@@ -20,25 +20,25 @@
             <img class="header-logo" src="assets/images/logo_lineal_1_blanco.png">
             <p class=""></p>
         </div>
-        <nav>
+        <nav id="nav">
             <ul class="nav">
                 <li class="nav-link c-50"><a href="#sobre-mi">Sobre mi</a></li>
                 <li class="nav-link c-50"><a href="#skills">Skills</a></li>
                 <li class="nav-link c-50"><a href="#hobbies">Hobbies</a></li>
                 <li class="nav-link c-50"><a href="#formacion">Formación</a></li>
-                <li class="nav-link c-50"><a href="#proyectos">Proyectos</a></li>
+                <li class="nav-link c-50"><a href="#experiencia">Proyectos</a></li>
                 <li class="nav-link c-50"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <!-- menu hamburguesa -->
-        <div class="menu-container">
-            <img src="assets/images/menuDesplegable.svg" alt="Menu desplegable" class="menu-desplegable" id="menu-desplegable">
+        <div class="menu-container" id="menuContainer">
+            <img src="assets/images/menuDesplegable.svg" alt="Menu desplegable" class="menu-desplegable" id="menu-desplegable" width="50px">
             <div class="dropdown-menu" id="dropdown-menu">
                 <li class=""><a href="#sobre-mi">Sobre mi</a></li>
                 <li class=""><a href="#skills">Skills</a></li>
                 <li class=""><a href="#hobbies">Hobbies</a></li>
                 <li class=""><a href="#formacion">Formación</a></li>
-                <li class=""><a href="#proyectos">Proyectos</a></li>
+                <li class=""><a href="#experiencia">Proyectos</a></li>
                 <li class=""><a href="#contacto">Contacto</a></li>
             </div>
         </div>
@@ -204,13 +204,15 @@
                 <h3 class="contacto-titulo c-6">CONTACTO</h3>
                 <p class="contacto-subtext c-6">¿Quieres contactarme?</p>
                 <p class="contacto-subtext c-6">Complete el siguiente formulario y me pondré en contacto. </p>
-                <form class="contacto-form" name="form">
-                    <input class="contacto-input" type="text" name="nombre" placeholder="Nombre">
-                    <input class="contacto-input" type="email" name="email" placeholder="E-mail">
-                    <input class="contacto-input" type="text" name="asunto" placeholder="Asunto">
-                    <textarea class="contacto-textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                    <button type="submit" class="contacto-boton">Enviar mensaje</button>
+                
+                <form class="contacto-form" name="form" onsubmit="return validarFormulario()">
+                    <input class="contacto-input" type="text" name="nombre" id="nombre" placeholder="Nombre" required maxlength="50">
+                    <input class="contacto-input" type="email" name="email" id="email" placeholder="E-mail" required>
+                    <input class="contacto-input" type="text" name="asunto" id="asunto" placeholder="Asunto" required maxlength="50">
+                    <textarea class="contacto-textarea" rows="5" cols="40" maxlength="300" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="contacto-boton" id="btn-enviar">Enviar mensaje</button>
                 </form>
+
             </div>
     </section>
     </main>
@@ -222,16 +224,6 @@
                 <p>2024</p>
             </div>
             <div class="footer-redes">
-                <!-- <div class="caja">
-                    <a href="https://www.facebook.com/carolina.aguirre.771/"  target="_blank">
-                        <i class="fa-brands fa-facebook-f" ></i>
-                    </a>
-                </div> -->
-                <!-- <div class="caja">
-                    <a href="https://twitter.com/1994Caguirre"  target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </div> -->
                 <div class="caja">
                     <a href="https://github.com/ca941125" target="_blank">
                         <i class="fa-brands fa-github"></i>
@@ -242,11 +234,6 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
-                <!-- <div class="caja">
-                    <a href="https://www.instagram.com/carolinaaguirre73/?hl=es-la" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div> -->
             </div>
     </footer>
 
