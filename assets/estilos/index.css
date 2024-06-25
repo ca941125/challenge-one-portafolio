@@ -68,7 +68,7 @@ main{
     flex-direction: row-reverse;
 }
 .hero .hero-imagen{
-    border-radius: 200px 200px 12px 194px;
+    border-radius: 170px 170px 20px 20px;
     width: 250px;
     object-fit: cover;
     border: 3px solid var(--cambridge-blue);
@@ -115,7 +115,7 @@ main{
     gap: 24px;
 }
 .skills .skills-box{
-    background-color: var(--tiffany-blue);
+    background-color: var(--cambridge-blue);
     width: 150px;
     height: 150px;
     display: flex;
@@ -124,7 +124,7 @@ main{
     justify-content: center;
     gap: 16px;
     padding: 24px;
-    border-radius: 200px 200px 12px 200px;
+    border-radius: 170px 170px 20px 20px;
     cursor: pointer;
 }
 .skills .skills-box:hover{
@@ -167,7 +167,7 @@ main{
     flex-wrap: wrap;
     gap: 16px;
     padding: 24px;
-    border-radius: 200px 200px 200px 12px;
+    border-radius: 170px 170px 20px 20px;
     cursor: pointer;
 }
 .hobbies .hobbies-box:hover{
@@ -310,11 +310,13 @@ main{
     background-color: gainsboro;
     color: var(--space-cadet);
 }
-.contacto button:focus{
+.contacto button:hover{
     font-weight: bold;
     transition: .3s;
     cursor: pointer;
     border: 2px solid var(--space-cadet);
+    background-color: var(--space-cadet);
+    color: var(--rosa);
 }
 /*footer*/
 
@@ -394,7 +396,9 @@ footer .footer-redes a:hover{
         transition: .3s;
     }
     /*Sección Hero*/
-
+    .hero .hero-redes{
+        justify-content: center;
+    }
     /*Sección sobre mi/
 
     /*Sección de Skills*/

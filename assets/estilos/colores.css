@@ -32,7 +32,7 @@
 
 /*  estilo general */
 
-/* boton primario */
+/* boton primario lila */
 .btt-1{
    background-color: var(--periwinkle);
    color: var(--space-cadet);
@@ -49,9 +49,9 @@
    color: var(--ghost-white);
 }
 
-/* boton secundario */
+/* boton secundario verde con borde*/
 .btt-2{
-   background-color: var(--tiffany-blue);
+   border: 2px solid var(--cambridge-blue);
    color: var(--space-cadet);
    width: 170px;
    height: 48px;
@@ -64,11 +64,28 @@
    transition: .4s;
    font-weight: bold;
    cursor: pointer;
+   border: none;
+}
+/* boton secundario verde*/
+.btt-4{
+   background-color:  var(--tiffany-blue);
+   color: var(--space-cadet);
+   width: 170px;
+   height: 48px;
+   border-radius: 0 12px;
+   text-align: center;
+}
+.btt-4:hover{
+   background-color: var(--cambridge-blue);
+   color: var(--ghost-white);
+   transition: .4s;
+   font-weight: bold;
+   cursor: pointer;
 }
 
-/* boton secundario */
+/* boton terciario rosa */
 .btt-3{
-   background-color: var(--tiffany-blue);
+   border: 2px solid var(--cambridge-blue);
    color: var(--space-cadet);
    width: 170px;
    height: 48px;
@@ -81,4 +98,5 @@
    transition: .4s;
    font-weight: bold;
    cursor: pointer;
+   border: none;
 }
